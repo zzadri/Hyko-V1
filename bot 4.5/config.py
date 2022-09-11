@@ -13,7 +13,7 @@ WARNING_COLOR = 0xF59E42
 INFO_COLOR = 0x4299F5
 
 # version bot pour le serverinfo
-BOT_VERSION = "Beta 5.2"
+BOT_VERSION = "Beta 4.5"
 
 
 # warn channel
