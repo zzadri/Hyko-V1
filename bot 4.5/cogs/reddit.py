@@ -72,66 +72,6 @@ class Reddits(commands.Cog, name='Reddits'):
     embed.set_footer(text = f"👍{ups} 💬{comments}")
     await ctx.send(embed=embed)
 
-  @commands.command()
-  async def neko(self, ctx):
-    subreddit = await reddit.subreddit("nekogirls")
-    all_subs = []
-    top = subreddit.top(limit = 200)
-    async for submission in top:
-        
-      all_subs.append(submission)
-      
-    random_sub = random.choice(all_subs)
-    name = random_sub.title
-    url = random_sub.url
-    ups = random_sub.score
-    link = random_sub.permalink
-    comments = random_sub.num_comments
-    embed = nextcord.Embed(title=name,url=f"https://reddit.com{link}", color=random.choice(config.COLORS))
-    embed.set_image(url=url)
-    embed.set_footer(text = f"👍{ups} 💬{comments}")
-    await ctx.send(embed=embed)
-
-
-  @commands.command()
-  async def tank(self, ctx):
-    subreddit = await reddit.subreddit("TankPorn")
-    all_subs = []
-    top = subreddit.top(limit = 200)
-    async for submission in top:
-        
-      all_subs.append(submission)
-      
-    random_sub = random.choice(all_subs)
-    name = random_sub.title
-    url = random_sub.url
-    ups = random_sub.score
-    link = random_sub.permalink
-    comments = random_sub.num_comments
-    embed = nextcord.Embed(title=name,url=f"https://reddit.com{link}", color=random.choice(config.COLORS))
-    embed.set_image(url=url)
-    embed.set_footer(text = f"👍{ups} 💬{comments}")
-    await ctx.send(embed=embed)
-
-  @commands.command()
-  async def design (self, ctx):
-    subreddit = await reddit.subreddit("DesignPorn")
-    all_subs = []
-    top = subreddit.top(limit = 200)
-    async for submission in top:
-        
-      all_subs.append(submission)
-      
-    random_sub = random.choice(all_subs)
-    name = random_sub.title
-    url = random_sub.url
-    ups = random_sub.score
-    link = random_sub.permalink
-    comments = random_sub.num_comments
-    embed = nextcord.Embed(title=name,url=f"https://reddit.com{link}", color=random.choice(config.COLORS))
-    embed.set_image(url=url)
-    embed.set_footer(text = f"👍{ups} 💬{comments}")
-    await ctx.send(embed=embed)
 
   @commands.command()
   async def animal (self, ctx):
@@ -173,25 +113,6 @@ class Reddits(commands.Cog, name='Reddits'):
     embed.set_footer(text = f"👍{ups} 💬{comments}")
     await ctx.send(embed=embed)
 
-  @commands.command(aliases=['Warship'])
-  async def warship (self, ctx):
-    subreddit = await reddit.subreddit("WarshipPorn")
-    all_subs = []
-    top = subreddit.top(limit = 200)
-    async for submission in top:
-        
-      all_subs.append(submission)
-      
-    random_sub = random.choice(all_subs)
-    name = random_sub.title
-    url = random_sub.url
-    ups = random_sub.score
-    link = random_sub.permalink
-    comments = random_sub.num_comments
-    embed = nextcord.Embed(title=name,url=f"https://reddit.com{link}", color=random.choice(config.COLORS))
-    embed.set_image(url=url)
-    embed.set_footer(text = f"👍{ups} 💬{comments}")
-    await ctx.send(embed=embed)
 
   @commands.command(aliases=['Warship'])
   async def warship (self, ctx):
