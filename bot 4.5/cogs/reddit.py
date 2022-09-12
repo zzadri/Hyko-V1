@@ -32,11 +32,11 @@ sys.path.insert(0,parentdir)
 
 
 reddit = asyncpraw.Reddit(
-  client_id="OVVBXj6_aNinv-HZqbLGag",
-  client_secret="SCvEoq3wWp9j1opCd2KhMJjQpgP0cg",
-  username="Hyko______",
-  password="58tlRhgh3lqL0SylZusZ",
-  user_agent="Hyko______"
+  client_id="TONID",
+  client_secret="TONCLIENT",
+  username="TONNOM",
+  password="TON PASSWORD",
+  user_agent="TONAGENT"
 )
 
 
